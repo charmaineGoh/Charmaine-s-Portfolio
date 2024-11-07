@@ -45,7 +45,7 @@
 
     .vr-banner h1 {
       font-size: 48px;
-      color:white;
+      color: white;
       margin-top: 20px;
     }
 
@@ -133,7 +133,7 @@
       /* Optional blur effect */
       height: 75px;
       width: 100%;
-      position:fixed;
+      position: fixed;
       /* Keeps navbar fixed at the top */
       top: -16px;
       z-index: 1000;
@@ -169,6 +169,33 @@
       height: auto;
       margin-right: 200px;
     }
+
+    p {
+      font-size: 20px;
+      /* Adjust as needed */
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: rgb(150, 49, 49);
+      /* Green background */
+      color: white;
+      /* White text */
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      /* Rounded corners */
+      font-size: 16px;
+      /* Font size */
+      margin-top: 10px;
+      /* Space between text and button */
+    }
+
+    .button:hover {
+      background-color: black;
+      /* Darker green on hover */
+    }
   </style>
 </head>
 
@@ -185,21 +212,22 @@
   <div class="vr-project">
     <div class="vr-banner">
       <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jote60FmsWw" 
-          title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" 
-          allowfullscreen></iframe>
-        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jote60FmsWw" title="YouTube video player"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
       </div>
       <h1>Carnival Mania VR Game</h1>
     </div>
 
     <div class="vr-details">
       <div class="vr-info">
+        <h3>Language/Tools Used</h3>
+        <p>Unity, C#, Canva</p>
+
         <h3>Category</h3>
         <p>Game Development<br>Software Development</p>
 
-        <h3>Language/Tools Used</h3>
-        <p>Unity, C#, Canva</p>
+
 
         <h3>Year Published</h3>
         <p>2024</p>
@@ -214,13 +242,18 @@
       </div>
       <div class="vr-description">
         <h3>Description:</h3>
-        <p>A movie reviews website coded with PHP and using MySQL as the database. Users are able to login, edit their
-          user information, add, edit and delete their own reviews for each movie. Each movie is also added into the
-          website through the use of PHP and MySQL and is not hard coded into the website. Through this website, I
-          learned
-          how the back-end of a website can function with the use of local-side databases, as well as some rudimentary
-          styling on the website to make it more user-friendly and approachable.</p>
-        <a href="https://myrp-my.sharepoint.com/:w:/g/personal/23021210_myrp_edu_sg/EaHGvg1GW-RKuBV4MKdr27kBES_R-FoBf6Y0y0bYElVmWQ?e=QoE1va" target="_blank">Game Design Document</a>
+        <p> A VR horror carnival escape room game developed using Unity and C#. Players are
+          immersed in a haunting carnival setting where they must solve puzzles and overcome obstacles to escape. The
+          game includes interactive elements that are dynamically programmed in C#, with each puzzle and challenge
+          carefully designed to enhance the eerie atmosphere. The VR environment and horror elements are crafted with a
+          focus on player experience and immersion. Through this project, I gained insight into creating immersive VR
+          experiences using Unity’s VR tools and C# scripting, as well as enhancing the game’s ambiance with unique
+          horror-themed elements. </p>
+        <p style="text-align: left; font-size: 18px;">
+          Click here <span style="font-size: 24px;">↓</span>
+        </p>
+        <a href="https://myrp-my.sharepoint.com/:w:/g/personal/23021210_myrp_edu_sg/EaHGvg1GW-RKuBV4MKdr27kBES_R-FoBf6Y0y0bYElVmWQ?e=QoE1va"
+          target="_blank" class="button">Game Design Document</a>
       </div>
     </div>
   </div>

@@ -7,96 +7,140 @@
   <title>Charmaine Goh</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-
     h2 {
       font-size: 2em;
       margin-bottom: 10px;
-      margin-top:80px;
+      margin-top: 80px;
       text-align: center;
       /* Centers the heading */
     }
 
     .about-container {
       display: flex;
-      /* Enables flexbox layout */
+      justify-content: space-between;
+      /* Spreads text and image */
       align-items: center;
-      /* Centers items vertically */
-      justify-content: center;
-      /* Centers items horizontally */
+      /* Vertically centers items */
       padding: 20px;
-      /* Adds padding around the container */
-      width: 100%;
-      /* Ensures the container takes the full width */
+      width: 80%;
+      /* Controls width of the container */
       max-width: 900px;
-      /* Optional: limits the maximum width of the container */
+      /* Optional: limits max width */
+      margin: 0 auto;
+      /* Centers the container horizontally */
     }
 
+    /* About text section */
     .about-text {
       flex: 1;
-      /* Takes up available space on the l eft */
-      margin-right: 20px;
-      /* Adds space between text and image */
+      /* Allows text to take up available space */
       text-align: left;
-      /* Aligns text to the left */
     }
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-      line-height: 1.6;
-    }
-
+    /* About image section */
     .about-image {
       flex: 0 0 auto;
       /* Prevents the image from growing */
-      margin-left: 100px;
+      margin-left: 60px;
+      /* Space between text and image */
     }
 
     .about-image img {
-      width: 300px;
+      width: 250px;
+      /* Sets width of the profile photo */
       height: auto;
       border-radius: 20px;
-
     }
 
+    /* Spreading the About Me and CCA Hobby text horizontally */
+    .about-text p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      display: inline-block;
+      /* Ensures the text is inline */
+      margin-right: 20px;
+      /* Adds space between paragraphs */
+    }
+
+
     .technical-skills {
-      position: relative;
-      bottom: 20px;
-      left: 800px;
-      width: 300px;
+      padding: 40px;
       background-color: #000022;
-      padding: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 11px;
-      text-align: left;
+      border-radius: 8px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     .technical-skills h3 {
-      font-size: 4em;
-      margin-bottom: 10px;
+      font-size: 2em;
+      color: whitesmoke;
+      /* Customize the color */
+      text-align: center;
     }
 
     .skills-category h4 {
-      font-size: 2em;
-      margin-bottom: 5px;
-    }
-
-    .skills-category ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .skills-category ul li {
       font-size: 1.5em;
-      margin-bottom: 20px;
+      color: whitesmoke;
+      /* Customize the color */
+      margin-top: 20px;
+      margin-bottom: 30px;
     }
-    .skills-category img {
-      width: 50px;
-      height: auto;
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 70px;
+      justify-content: center;
     }
-    
-     
-    
+
+    .skill-item {
+      background-color: rgb(32, 32, 32);
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-align: center;
+
+      font-size: 1em;
+      flex: 1 1 200px;
+      /* Adjusts to fit smaller screens */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 200px;
+      box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6),
+        0 0 30px 10px rgba(255, 255, 255, 0.4),
+
+        0 0 50px 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .skill-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      /* or use 'cover' if you prefer the image to fill the box entirely */
+      max-width: 40px;
+      /* Optional: sets a max width for the image */
+      max-height: 40px;
+      /* Optional: sets a max height for the image */
+      margin: 0 auto;
+      /* Center the image within the box */
+    }
+
+    footer {
+      margin-top: auto;
+      /* Push the footer to the bottom */
+      text-align: center;
+      /* Center the text inside the footer */
+      font-size: 0.8em;
+      /* Adjust the font size */
+      padding: 20px 0;
+      /* Add some padding for better spacing */
+      background-color: #000022;
+      /* Optional: background color */
+      color: white;
+      /* Optional: text color */
+    }
   </style>
 </head>
 
@@ -119,14 +163,18 @@
   <div class="about-container">
     <div class="about-text">
       <p>
-        About me: I am a second-year student at Republic Polytechnic, pursuing a diploma in digital design and
-        development.
-        Having learnt both development and design my interest definitely lies more towards the development side.
+        What make me different :
+        I believe that growth comes from challenges, even when there’s a chance of failure. Every success
+        and setback is an opportunity to learn more about what works and what needs improvement. By continually refining
+        my skills and pushing my boundaries, I develop a more nuanced understanding of my strengths and areas for
+        growth. With my drive and perspective, I am confident that I can be a valuable asset to any team seeking a
+        determined and adaptable individual.
       </p>
-      <p>
-        CCA&Hobby: I am part of the school's Field Hockey Team and I enjoy playing the sport. I also enjoy solving rubix
-        cubes in my free time.
-      </p>
+      <!-- <p>
+        I’m also part of the Republic Polytechnic Field Hockey Team, where I’ve learned the value of teamwork,
+        discipline, and composure under pressure. Outside of sports, I love solving Rubik’s cubes, a hobby that
+        challenges my problem-solving and logical thinking skills, much like programming. Both activities allow me to
+        unwind while keeping my mind sharp -->
     </div>
 
     <div class="about-image">
@@ -134,32 +182,51 @@
     </div>
   </div>
   <!-- Technical Skills Section -->
+  <!-- Technical Skills Section -->
   <div class="technical-skills">
-    <h3>Technical Skills : </h3>
-    <div class="skills-category">
-      <h4>Design</h4>
-      <ul>
-        <li>Adobe Photoshop, Adobe Illustrator, Adobe XD</li>
-        <img src="/img/photoshop-.png" alt="Photoshop"><img src="/img/illustrator.png" alt="Illustrator"><img src="/img/XD.png" alt="XD">
-       
-      </ul>
-    </div>
+    <h3>Technical Skills</h3>
     <div class="skills-category">
       <h4>Development</h4>
-      <ul>
-        <li>Javascript,HTML,CSS,MYSQL,Python</li>
-        <img src="/img/java.png" alt="Java">
-        <img src="/img/html.png" alt="HTML">
-        <img src="/img/css.png" alt="CSS">
-        <img src="/img/mysql.png" alt="MYSQL">
-        <img src="/img/python.png" alt="Python">
-
-
-      
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="/img/html.png">
+        </div>
+        <div class="skill-item">
+          <img src="/img/css.png">
+        </div>
+        <div class="skill-item">
+          <img src="/img/java.png">
+        </div>
+        <div class="skill-item">
+          <img src="/img/mysql.png">
+        </div>
+        <div class="skill-item">
+          <img src="/img/Python.png">
+        </div>
+        <div class="skill-item">
+          <img src="/img/unity.png">
+        </div>
+      </div>
+    </div>
+    <div class="skills-category">
+      <h4>Design</h4>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="/img/illustrator.png">
+        </div>
+        <div class="skill-item">
+          <img src="/img/XD.png">
+        </div>
+        <div class="skill-item">
+          <img src="/img/photoshop-.png">
+        </div>
+      </div>
     </div>
   </div>
+
   </div>
+  </div>
+  <footer>&copy; 2024 Charmaine Goh</footer>
 </body>
 
 </html>

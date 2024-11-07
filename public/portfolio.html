@@ -7,20 +7,69 @@
   <title>Charmaine Goh</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    h2{
+    h2 {
       margin-bottom: 10px;
       margin-top: 80px;
       text-align: center;
     }
+
     .project-card a {
-    color: white;       /* Sets the text color to white */
-    text-decoration: none; /* Removes the underline */
+      color: white;
+      /* Sets the text color to white */
+      text-decoration: none;
+      /* Removes the underline */
+    }
+
+    .project-card a:hover {
+      color: #ccc;
+      /* Optional: Change color on hover */
+    }
+
+    footer {
+      margin-top: auto;
+      /* Push the footer to the bottom */
+      text-align: center;
+      /* Center the text inside the footer */
+      font-size: 0.8em;
+      /* Adjust the font size */
+      padding: 20px 0;
+      /* Add some padding for better spacing */
+      background-color: #000022;
+      /* Optional: background color */
+      color: white;
+      /* Optional: text color */
+    }
+
+    .filter-btns {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .filter-btns button {
+      background-color: rgb(30, 30, 30);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .filter-btns button:hover {
+      background-color: whitesmoke;
+    }
+    .no-animations {
+  animation: none !important;
+  transition: none !important;
 }
 
-.project-card a:hover {
-    color: #ccc;        /* Optional: Change color on hover */
+.project-card {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Example transition for hover */
 }
-</style>
+
+.project-card img {
+  transition: transform 0.3s ease; /* Example transition for image hover */
+}
+  </style>
 </head>
 
 <body>
@@ -36,46 +85,66 @@
 
   <div class="projects-section">
     <h2>MY PROJECTS</h2>
-    <p>Click on each project to see details </p>
+    <p>Click on each project to see details</p>
+
+    <!-- Filter buttons -->
+    <div class="filter-btns">
+      <button onclick="filterProjects('development')">Development</button>
+      <button onclick="filterProjects('design')">Design</button>
+    </div>
+
     <div class="projects-gallery">
-      <div class="project-card">
-        <a href="/portfolio/vr"> <!-- Link to the VR project details page -->
+      <div class="project-card development">
+        <a href="/portfolio/vr">
           <img src="img/vr.png" alt="Project 1">
         </a>
         <h4>Development</h4>
       </div>
-      <div class="project-card">
+      <div class="project-card development">
         <a href="/portfolio/pizzaweb">
           <img src="img/pizzaweb.png" alt="Project 2">
           <h3>Development</h3>
+        </a>
       </div>
-      <div class="project-card">
+      <div class="project-card development">
         <a href="/portfolio/ar">
           <img src="img/ar.png" alt="Project 3">
           <h3>Development</h3>
-      <!-- Add more project cards as needed -->
-    </div>
-    <div class="project-card">
-      <a href="/portfolio/sticker">
-        <img src="img/sticker.png" alt="Project 4">
-        <h3>Design</h3>
+        </a>
+      </div>
+      <div class="project-card design">
+        <a href="/portfolio/sticker">
+          <img src="img/sticker.png" alt="Project 4">
+          <h3>Design</h3>
+        </a>
+      </div>
     </div>
   </div>
 
+  
 
-  <!-- <div class="projectss-section">
-    <h2>ALL PROJECTS</h2>
-    <p>Hold and drag outside of each image to navigate (left and right)</p>
-    <div class="projectss-gallery">
-      <div class="projects-card">
-        <img src="vr.png" alt="Project 1">
-        <h4>Escape room VR game</h4>
-      </div>
-      <div class="projects-card">
-        <img src="wlogo.png" alt="Project 2">
-        <h3>Wanderlust</h3>
-      </div>
-    </div> -->
-
-
+  <script>
+    function filterProjects(category) {
+      const allProjects = document.querySelectorAll('.project-card');
+      allProjects.forEach(project => {
+        // Remove any previously added animation disabling classes
+        project.classList.remove('no-animations');
+        
+        if (project.classList.contains(category)) {
+          // Make the project visible (show it)
+          project.style.visibility = 'visible';
+          project.style.opacity = '1';
+          // Add the animation disabling class to stop animations
+          project.classList.add('no-animations');
+        } else {
+          // Hide the project
+          project.style.visibility = 'hidden';
+          project.style.opacity = '0';
+        }
+      });
+    }
+  </script>
+  
 </body>
+
+</html>
