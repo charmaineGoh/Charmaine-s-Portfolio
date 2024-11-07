@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charmaine Goh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <img src="img/logo.png" alt="Logo" class="nav-logo-img">
+      <li><a href="/">Home</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact">
+    <h1>Want to connect?</h1>
+    <p>Are you trying to get in touch with me? To visit me on the corresponding platforms, click on any of the buttons below!
+    </p>
+
+    <div class="social-icons">
+
+
+      <a href="mailto:23021210@myrp.edu.sg" target="_blank">
+        <img src="img/email.png" alt="Email">
+      </a>
+      <a href="https://www.linkedin.com/in/charmaine-goh-99b932273/" target="_blank">
+        <img src="img/linkedIn_PNG39.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/charmaineGoh" target="_blank">
+        <img src="img/github.png" alt="GitHub">
+      </a>
+      <a href="#"
+        onclick="document.getElementById('phonePopup').classList.add('active'); document.getElementById('overlay').classList.add('active');">
+        <img src="img/phone.png" alt="Phone">
+      </a>
+      <div id="overlay" class="overlay"
+        onclick="document.getElementById('phonePopup').classList.remove('active'); document.getElementById('overlay').classList.remove('active');">
+      </div>
+      <div id="phonePopup" class="popup">
+        <p>My phone number: +65 90684024</p>
+        <button class="close-btn"
+          onclick="document.getElementById('phonePopup').classList.remove('active'); document.getElementById('overlay').classList.remove('active');">Close</button>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 Charmaine Goh</footer>
+  </section>
+</body>

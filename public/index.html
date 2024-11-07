@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charmaine Goh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <img src="img/logo.png" alt="Logo" class="nav-logo-img">
+      <li><a href="/">Home</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="video-container">
+    <video autoplay muted loop id="bg-video">
+      <source src="img/bg.MP4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <!-- Hero Section -->
+  <div class="intro">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <h2>Hello, I'm</h2>
+    <h1>Charmaine Goh</h1>
+    <p class="subtitle">Developer and Designer</p>
+    <div class="arrow">
+      <a href="#about"><span>▼</span></a> <!-- Link to the About section -->
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>Who am i?</h2>
+      <p>
+        My name is Charmaine Goh.At Republic Polytechnic, I'm a second-year student working toward a diploma in digital
+        design and development.
+      </p>
+      <p>
+        You may learn more about who I am and what I do on my portfolio.
+      </p>
+      <p>
+        <a href="/about">Click here</a> to learn more about me !
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="img/profile.png" alt="Charmaine Goh">
+    </div>
+  </section>
+
+  <!-- <section id="projects" class="projects-section">
+    <h2>Recent Projects</h2>
+    <div class="projects-grid"> -->
+      <!-- Project 1 -->
+      <!-- <div class="project-item">
+        <a href="/project1">
+          <img src="pro1.png" alt="Basic Reservation App">
+          <h3>VR escape room game</h3>
+        </a>
+      </div> -->
+
+      <!-- Project 2 -->
+      <!-- <div class="project-item">
+        <a href="/project2">
+          <img src="phone2.png" alt="Module Display App">
+          <h3>Ticketing website</h3>
+        </a>
+      </div>
+    </div>
+    <button a href="/portfolio" class="explore-btn">Explore projects</button>
+  </section> -->
+  <!-- contact section -->
+
+  <section class="contact1">
+    <a href="mailto:23021210@myrp.edu.sg" target="_blank">
+      <img src="img/email.png" alt="Email">
+    </a>
+    <a href="https://www.linkedin.com/in/charmaine-goh-99b932273/" target="_blank">
+      <img src="img/linkedIn_PNG39.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/charmaineGoh" target="_blank">
+      <img src="img/github.png" alt="GitHub">
+    </a>
+    <a href="#"
+      onclick="document.getElementById('phonePopup').classList.add('active'); document.getElementById('overlay').classList.add('active');">
+      <img src="img/phone.png" alt="Phone">
+    </a>
+    <div id="overlay" class="overlay"
+      onclick="document.getElementById('phonePopup').classList.remove('active'); document.getElementById('overlay').classList.remove('active');">
+    </div>
+    <div id="phonePopup" class="popup">
+      <p>My phone number: +65 90684024</p>
+      <button class="close-btn"
+        onclick="document.getElementById('phonePopup').classList.remove('active'); document.getElementById('overlay').classList.remove('active');">Close</button>
+    </div>
+    <style>
+      /* Centering the footer content */
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        /* Adjust for spacing above the footer */
+        padding: 10px 0;
+        font-size: 14px;
+        /* Optional: Adjust font size */
+        color: white;
+        /* Optional: Adjust color */
+      }
+    </style>
+
+    <footer>&copy; 2024 Charmaine Goh</footer>
+
+  </section>
+
+
+
+</body>
+
+</html>

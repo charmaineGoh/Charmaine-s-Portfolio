@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charmaine Goh</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      margin-top:80px;
+      text-align: center;
+      /* Centers the heading */
+    }
+
+    .about-container {
+      display: flex;
+      /* Enables flexbox layout */
+      align-items: center;
+      /* Centers items vertically */
+      justify-content: center;
+      /* Centers items horizontally */
+      padding: 20px;
+      /* Adds padding around the container */
+      width: 100%;
+      /* Ensures the container takes the full width */
+      max-width: 900px;
+      /* Optional: limits the maximum width of the container */
+    }
+
+    .about-text {
+      flex: 1;
+      /* Takes up available space on the l eft */
+      margin-right: 20px;
+      /* Adds space between text and image */
+      text-align: left;
+      /* Aligns text to the left */
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .about-image {
+      flex: 0 0 auto;
+      /* Prevents the image from growing */
+      margin-left: 100px;
+    }
+
+    .about-image img {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+
+    }
+
+    .technical-skills {
+      position: relative;
+      bottom: 20px;
+      left: 800px;
+      width: 300px;
+      background-color: #000022;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 11px;
+      text-align: left;
+    }
+
+    .technical-skills h3 {
+      font-size: 4em;
+      margin-bottom: 10px;
+    }
+
+    .skills-category h4 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    .skills-category ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .skills-category ul li {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .skills-category img {
+      width: 50px;
+      height: auto;
+    }
+    
+     
+    
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <img src="/img/logo.png" alt="Logo" class="nav-logo-img">
+      <li><a href="/">Home</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <h2>Hi, I am Charmaine!</h2>
+  </div>
+
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+        About me: I am a second-year student at Republic Polytechnic, pursuing a diploma in digital design and
+        development.
+        Having learnt both development and design my interest definitely lies more towards the development side.
+      </p>
+      <p>
+        CCA&Hobby: I am part of the school's Field Hockey Team and I enjoy playing the sport. I also enjoy solving rubix
+        cubes in my free time.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="/img/photo2.png" alt="Charmaine Goh">
+    </div>
+  </div>
+  <!-- Technical Skills Section -->
+  <div class="technical-skills">
+    <h3>Technical Skills : </h3>
+    <div class="skills-category">
+      <h4>Design</h4>
+      <ul>
+        <li>Adobe Photoshop, Adobe Illustrator, Adobe XD</li>
+        <img src="/img/photoshop-.png" alt="Photoshop"><img src="/img/illustrator.png" alt="Illustrator"><img src="/img/XD.png" alt="XD">
+       
+      </ul>
+    </div>
+    <div class="skills-category">
+      <h4>Development</h4>
+      <ul>
+        <li>Javascript,HTML,CSS,MYSQL,Python</li>
+        <img src="/img/java.png" alt="Java">
+        <img src="/img/html.png" alt="HTML">
+        <img src="/img/css.png" alt="CSS">
+        <img src="/img/mysql.png" alt="MYSQL">
+        <img src="/img/python.png" alt="Python">
+
+
+      
+      </ul>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

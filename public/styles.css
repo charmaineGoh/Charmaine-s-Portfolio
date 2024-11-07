@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', sans-serif;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  background-color: #000022;
+  color: whitesmoke;
+
+
+}
+
+/* Navigation Styles */
+
+/* Navbar container styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  backdrop-filter: blur(5px); /* Optional blur effect */
+  height: 75px;
+  width: 100%;
+  position: fixed; /* Keeps navbar fixed at the top */
+  top: 0;
+  z-index: 1000; /* Ensures navbar is above other content */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+/* Navbar links styling */
+nav ul li {
+  margin-left: auto;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  font-size: 20px;
+  text-align: left;
+ 
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+  background-color: #000022;
+  height: 75px;
+}
+
+/* Logo styling */
+.nav-logo-img {
+  width: 250px;
+  height: auto;
+  margin-right: 200px;
+}
+
+
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures video covers the entire screen */
+  z-index: -1;
+  /* Place video behind the overlay */
+}
+
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  /* Ensures that the intro section takes up the remaining space */
+  text-align: center;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+  margin-left: 650px;
+
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Bouncing Arrow Animation */
+.arrow {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.arrow span {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Existing styles from before */
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  flex-direction: column;
+}
+
+.-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.arrow span {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #000022;
+  margin-left: 200px;
+}
+
+.about-container {
+  max-width: 50%;
+}
+
+.about-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 200px;
+}
+
+/* Projects Section */
+/* .projects-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000022;
+  color: #f1f1f1;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: whitesmoke;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.project-item {
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
+.project-item h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+/* .explore-btn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #e5e59c;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+
+/* contact page */
+.contact {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.social-icons {
+  margin-top: 100px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-icons a img {
+  width: 100px;
+  height: 80px;
+  filter: brightness(0) invert(1);
+  /* Makes the icons white */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8em;
+}
+
+.popup {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #000022;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Dark background overlay */
+.overlay {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+/* Show popup when overlay is active */
+.overlay.active,
+.popup.active {
+  display: block;
+}
+
+/* Close button */
+.close-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: rgba(166, 111, 201, 0.8);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* index contact */
+.contact1 img {
+  width: 30px;
+  /* Adjust the width as needed */
+  height: 30px;
+  /* Adjust the height as needed */
+
+
+}
+
+/* Optional styling for spacing between icons */
+.contact1 a {
+  margin: 0 10px;
+  /* Adds space between icons */
+
+  align-items: center;
+}
+
+.contact1 a img {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+  /* Makes the icons white */
+}
+
+.contact1 img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* projects page */
+
+
+.projects-section {
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  /* Hide overflow to create a clean scroll effect */
+
+}
+
+
+.projects-gallery {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 1px;
+  animation: scroll 20s linear infinite;
+  scrollbar-width: none;
+  /* Smooth, continuous scroll */
+
+}
+
+.project-card {
+  min-width: 2px;
+  transition: transform 0.3s ease;
+  
+}
+
+.project-card :hover {
+  transform: scale(1.1);
+  /* Enlarge on hover */
+}
+
+.project-card img {
+  width: 60%;
+  border-radius: 6px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+    
+  }
+}
+
+ 
