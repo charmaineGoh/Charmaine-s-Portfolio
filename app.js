@@ -37,7 +37,21 @@ app.get('/portfolio/ar', (req, res) => {
 app.get('/portfolio/sticker', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'sticker.html'));
 });
-
+app.get('/portfolio/kookies', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'kookies.html'));
+});
+app.get('/portfolio/travellist', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'travellist.html'));
+});
+app.get('/portfolio/adobewebsite', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'adobewebsite.html'));
+});
+app.get('/portfolio/leo2.0', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'leo2.0.html'));
+});
+app.get('/portfolio/catsticker', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'catsticker.html'));
+});
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
