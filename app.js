@@ -52,6 +52,9 @@ app.get('/portfolio/leo2.0', (req, res) => {
 app.get('/portfolio/catsticker', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'catsticker.html'));
 });
+app.get('/portfolio/styleshop', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'styleshop.html'));
+});
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
